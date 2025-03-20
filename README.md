@@ -1,2 +1,2 @@
 # task-1
-Tell me about your website here.
+This website is to tell people and educate them about the qualities and general islamic rules and a muslim life.
