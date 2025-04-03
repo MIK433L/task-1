@@ -3,18 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insert Title Here</title>
+    <title>Crescent and Star - An Islamic Website</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Basic styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Sidebar container */
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            padding-top: 20px;
+            box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Sidebar links */
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Change color on hover */
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        /* Main content */
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+            transition: margin-left 0.3s;
+        }
+
+        .main-content p {
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>A Crescent and Star</h1>
-    </header>
-    <main>
-        <p>Insert Introduction Here</p>
-    </main>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <a href="https://expert-tribble-pjwqvq96pqr7c97j5-3000.app.github.dev/">Home</a>
+        <a href="https://studious-space-yodel-4jv9496rw6r927959-3000.app.github.dev/task%201">An Islamic Lifestyle</a>
+        <a href="https://cuddly-halibut-9754v4wxj4q5f777r-3000.app.github.dev/2">Different rights and responsibilities</a>
+        <a href="https://jubilant-fortnight-7v54q4wxpx972xj6g-3000.app.github.dev/3#services">Other FAQs</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <header>
+            <h1 class="header-text" style="text-align: center;">𝘾𝙧𝙚𝙨𝙘𝙚𝙣𝙩 𝙖𝙣𝙙 𝙎𝙩𝙖𝙧</h1>
+        </header>
+        <p>Salam/Hello! You might have stumbled across this website because of research, entertainment, or other reasons. I hope this website educates you in some way, so that you get off this website, knowing at least one more thing about Islam. This information is coming from my knowledge and others' opinions and knowledge (other websites).</p>
+    </div>
+
     <footer>
-        <p>Start Footer Here</p>
+        <center><h2>Contact Me!</h2></center>
+        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCKCBBXmXCZntkPFQJlQHzQNxDBxjbSlvwHqPqKnhXPwjRLTpwgdSFTDwPqRVSLXKSKqVLKL">Send me an Email</a>
+        <a href="https://github.com/">My Github is MIK433L</a>
     </footer>
+
+    <!-- Button and Image -->
+    <button onclick="goHome()">Home</button>
+    <img src="https://shorturl.at/5fZfz" alt="Light-blue crescent">
+
+    <!-- Define the goHome function -->
+    <script>
+        function goHome() {
+            window.location.href = "https://expert-tribble-pjwqvq96pqr7c97j5-3000.app.github.dev/";
+        }
+    </script>
 </body>
 </html>

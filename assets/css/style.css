@@ -1,0 +1,68 @@
+
+    <style>
+        /* Corrected styles */
+        p {
+            font-size: 20px;
+        }
+        
+        .big-text {
+            font-size: 30px;
+        }
+
+        .header-text {
+            font-size: 50px;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+
+    <header>
+        <h1 class="header-text" style="text-align: center;">𝘾𝙧𝙚𝙨𝙘𝙚𝙣𝙩 𝙖𝙣𝙙 𝙎𝙩𝙖𝙧</h1>
+    </header>
+
+    <section>
+        <main>
+            <p class="big-text">Salam/Hello! You might have stumbled across this website because of research, entertainment, or other reasons. I hope this website educates you in some way, so that you get off this website, knowing at least one more thing about Islam. This information is coming from my knowledge and others' opinions and knowledge (other websites).</p>
+        </main>
+    </section>
+
+    <section>
+        <main>
+            <p style="font-size: 40px;">An Islamic Lifestyle</p>
+        </main>
+    </section>
+
+    <footer>
+        <h2>Contact Me!</h2>
+        <a href="mailto:your-email@example.com">Send Email</a>
+    </footer>
+
+    <button onclick="goHome()">Home</button>
+
+    <script>
+        // JavaScript function for button
+        function goHome() {
+            window.location.href = "index.html"; // Replace "index.html" with your homepage URL
+        }
+    </script>
+
+    <img src="https://shorturl.at/5fZfz" alt="Light-blue crescent">
+</body>
+</html>
