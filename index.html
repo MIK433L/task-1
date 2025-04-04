@@ -12,6 +12,9 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures the footer stays at the bottom */
         }
 
         /* Sidebar container */
@@ -22,8 +25,35 @@
             top: 0;
             left: 0;
             background-color: #111;
-            padding-top: 20px;
             box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Logo styles (centered at the top) */
+        .logo-wrapper {
+    position: absolute;
+    top: 10px;  /* Position the logo near the top */
+    left: 50%;  /* Center it horizontally */
+    transform: translateX(-85%) translateY(-50%); /* Offset to truly center and move up */
+    width: 100px; /* Logo width */
+    height: auto;
+}
+
+
+        .logo-wrapper a {
+            display: block;
+            width: 100%;  /* Make the entire logo clickable */
+            height: 100%;
+            text-align: center;
+        }
+
+        .logo-wrapper img {
+            width: 100%; /* Make the logo size responsive within the wrapper */
+            height: auto;
+            transition: transform 0.3s ease; /* Smooth scaling effect */
+        }
+
+        .logo-wrapper a:hover img {
+            transform: scale(1.1); /* Slightly enlarge the logo on hover */
         }
 
         /* Sidebar links */
@@ -36,6 +66,11 @@
             transition: background-color 0.3s ease;
         }
 
+        /* Add margin-top to lower the navigation links */
+        .sidebar a:first-of-type {
+            margin-top: 150px; /* Push the first link lower, effectively lowering all links */
+        }
+
         /* Change color on hover */
         .sidebar a:hover {
             background-color: #575757;
@@ -46,6 +81,7 @@
             margin-left: 250px;
             padding: 20px;
             transition: margin-left 0.3s;
+            flex: 1; /* Ensures this takes up available space and pushes footer down */
             padding-bottom: 30px;
         }
 
@@ -57,15 +93,49 @@
             font-size: 20px;
         }
 
-        footer h2 {
+        /* Footer styling */
+        footer {
+            background-color: #333; /* Darken footer for contrast */
+            color: white; /* Change text color to white */
+            padding: 20px;
             text-align: center;
+            margin-top: auto; /* Ensures footer sticks at the bottom of the page */
+        }
+
+        footer h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* Footer link styling */
+        footer nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            margin: 10px 0;
+            transition: color 0.5s ease, padding 0.5s ease; /* Add transition for color and padding */
+        }
+
+        /* Footer link hover effect */
+        footer nav a:hover {
+            background-color: #989898;
+            color: black; /* Change text color on hover */
+            padding: 5px; /* Add padding on hover for some visual feedback */
         }
     </style>
 </head>
 <body>
     <!-- Sidebar Navigation -->
     <div class="sidebar">
-        <a href="https://expert-tribble-pjwqvq96pqr7c97j5-3000.app.github.dev/">Home</a>
+        <!-- Logo as a clickable link to home -->
+        <div class="logo-wrapper">
+            <a href="https://expert-tribble-pjwqvq96pqr7c97j5-3000.app.github.dev/"> 
+                <img src="https://static.vecteezy.com/system/resources/previews/046/448/691/non_2x/crescent-moon-clipart-isolated-on-white-background-free-vector.jpg" alt="A crescent moon logo">
+            </a>
+        </div>
+
+        <!-- Navigation links with spacing added -->
         <a href="https://studious-space-yodel-4jv9496rw6r927959-3000.app.github.dev/task%201">An Islamic Lifestyle</a>
         <a href="https://cuddly-halibut-9754v4wxj4q5f777r-3000.app.github.dev/2">Different rights and responsibilities</a>
         <a href="https://jubilant-fortnight-7v54q4wxpx972xj6g-3000.app.github.dev/3#services">Other FAQs</a>
@@ -79,6 +149,7 @@
         <p>Salam/Hello! You might have stumbled across this website because of research, entertainment, or other reasons. I hope this website educates you in some way, so that you get off this website, knowing at least one more thing about Islam. This information is coming from my knowledge and others' opinions and knowledge (other websites).</p>
     </div>
 
+    <!-- Footer: Contact Me -->
     <footer>
         <h2>Contact Me!</h2>
         <nav>
@@ -87,8 +158,12 @@
         </nav>
     </footer>
 
-    <!-- Image -->
-    <img src="https://shorturl.at/5fZfz" alt="Light-blue crescent moon and star, a symbol often associated with Islam">
-
 </body>
 </html>
+
+
+
+
+
+
+
